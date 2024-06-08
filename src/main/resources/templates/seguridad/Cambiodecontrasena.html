@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nuevo Password</title>
 </head>
 <body>
+<h2>Establecer Nuevo Password</h2>
+<label for="newPassword">Nuevo Password:</label>
+<input type="password" id="newPassword"><br><br>
+<button onclick="setNewPassword()">Establecer Nuevo Password</button><br><br>
 
+<h2>Repetir Nuevo Password</h2>
+<label for="repeatPassword">Repetir Nuevo Password:</label>
+<input type="password" id="repeatPassword"><br><br>
+<button onclick="repeatNewPassword()">Repetir Nuevo Password</button>
+
+<script>
+    function setNewPassword() {
+        var newPassword = document.getElementById("newPassword").value;
+        // Aquí puedes agregar la lógica para establecer el nuevo password
+        console.log("Nuevo password establecido: " + newPassword);
+    }
+
+    function repeatNewPassword() {
+        var newPassword = document.getElementById("newPassword").value;
+        var repeatPassword = document.getElementById("repeatPassword").value;
+
+        if (newPassword === repeatPassword) {
+            // Aquí puedes agregar la lógica para repetir el nuevo password
+            console.log("El nuevo password se repitió correctamente.");
+        } else {
+            alert("Los passwords no coinciden. Por favor, intenta de nuevo.");
+        }
+    }
+</script>
 </body>
 </html>
