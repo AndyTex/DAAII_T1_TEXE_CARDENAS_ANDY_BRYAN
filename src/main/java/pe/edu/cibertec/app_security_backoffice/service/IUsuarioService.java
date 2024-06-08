@@ -7,8 +7,8 @@ import java.util.List;
 public interface IUsuarioService {
 
     Usuario buscarUsuarioxNomUsuario(String nomusuario);
-    Usuario guardarUsuario(Usuario usuario);
+
     void actualizarUsuario(Usuario usuario);
-    List<Usuario> listarUsuario();
-    Usuario buscarUsuarioxIdUsuario(Integer idusuario);
+
+    Usuario guardarUsuario(Usuario usuario);
 }
